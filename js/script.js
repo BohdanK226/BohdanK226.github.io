@@ -64,15 +64,20 @@ $(document).ready(function () {
     $(window).on('resize', fix_size);
     fix_size();
 
-});
-
-
- $(window).load(function() {
-        var preloader = $('.preloader');
-        preloader.delay(350).fadeOut('slow');
-        $('html').css('overflow-y', 'scroll');
-        $('.work-container').addClass('animate');
+            $('.work-container').addClass('animate');
         $('.welcome').addClass('animate');
         $('.fly-in').addClass('animate');
         $('.fly-in span').addClass('animate');
+
 });
+
+
+//  $(window).load(function() {
+//         var preloader = $('.preloader');
+//         preloader.delay(350).fadeOut('slow');
+//         $('html').css('overflow-y', 'scroll');
+//         $('.work-container').addClass('animate');
+//         $('.welcome').addClass('animate');
+//         $('.fly-in').addClass('animate');
+//         $('.fly-in span').addClass('animate');
+// });
