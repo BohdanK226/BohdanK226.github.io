@@ -270,6 +270,10 @@ main h1 {
     padding: 7px;
 }
 
+main h1 a:hover {
+    color: red;
+}
+
 .wrapper-contacts {
     padding: 25px 30px;
     background-color: #323232;
