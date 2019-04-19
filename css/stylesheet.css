@@ -202,6 +202,17 @@ main .row {
     position: relative;
     box-shadow: 0 0 10px 2px #35506c;
     transition: transform 0.3s ease-in-out;
+    background: top center no-repeat;
+    background-size: cover;
+}
+
+.article-wrapper:hover {
+    animation: preview 12s ease-in-out alternate forwards infinite;
+}
+@keyframes preview {
+    to {
+        background-position: bottom center;
+    }
 }
 
 .screen-wrapper {
@@ -214,24 +225,33 @@ main .row {
     transform: scale(1.07);
 }
 
-.article-wrapper:hover .work-description {
-    animation: slide-down .8s ease-in-out forwards;
+.work-container>div:hover .work-description {
+    opacity: 1;
+    /*animation: slide-down .8s ease-in-out forwards;*/
+    transform: translateY(-94%);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 10px;
 }
 
 .work-description {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
     color: white;
-    padding: 40px 10px 15px 10px;
+    padding: 15px;
     font-family: "Calibri Light", MavenRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: justify;
     font-size: 14px;
     letter-spacing: 1px;
-    display: none;
+    display: block;
+    opacity: 0;
     line-height: 18px;
     width: 100%;
+    transition: all 1s;
+    z-index: 999999;
+    box-shadow: 0 0 11px 0 black;
 }
 
 .icon-resize {
@@ -388,14 +408,15 @@ a.github-link {
     color: blueviolet;
     display: block;
     float: right;
-    transition: transform .4s;
+    transition: color .4s, transform .4s;
     margin: 10px 10px 0 0;
     animation: to-git infinite alternate 1.5s forwards;
+    text-shadow: 0 0 8px red;
 }
 
 .github-link:hover {
     cursor: pointer;
-    color: #00c59e;
+    color: red;
     transform: scale(1.1);
     animation: none;
 }
@@ -442,3 +463,4 @@ a.github-link {
         font-size: 50px;
     }
 }
+
