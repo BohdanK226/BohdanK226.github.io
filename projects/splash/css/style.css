@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'PTsans';
+    src: url('../fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-regular-webfont.woff') format('woff'),
+    url('../fonts/pt_sans-web-regular-webfont.ttf') format('truetype'),
+    url('../fonts/pt_sans-web-regular-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTsans';
+    src: url('../fonts/pt_sans-web-bold-webfont.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-bold-webfont.woff') format('woff'),
+    url('../fonts/pt_sans-web-bold-webfont.ttf') format('truetype'),
+    url('../fonts/pt_sans-web-bold-webfont.svg#pt_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body.splash1 {
+    font-family: PTsans, Arial, sans-serif, "Times New Roman";
+    color: #7f8083;
+    font-size: 13px;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px 0 15px;
+}
+
+.splash1 header {
+    background-color: white;
+    padding: 17px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.splash1 h2 {
+    color: #63859e;
+    font-size: 20px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contacts {
+    float: left;
+    margin-top: 15px;
+    line-height: 17px;
+}
+
+.contacts .address {
+    float: left;
+    max-width: 340px;
+}
+
+.contacts .address:first-child {
+    padding-right: 40px;
+    margin-right: 40px;
+    border-right: 1px solid #b0c1ce;
+}
+
+.social_icons .fa {
+    background-color: #63859e;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.social_icons {
+    float: right;
+}
+/*create background with redial gradient*/
+.main {
+    background-color: #4f86a0;
+    background: -webkit-repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px),
+    #4f86a0 -webkit-repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px) -117.5px -117.5px;
+
+    background: -o-repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px),
+    #4f86a0 -o-repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px) -117.5px -117.5px;
+
+    background: -moz-repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px),
+    #4f86a0 -moz-repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px) -117.5px -117.5px;
+
+    background: repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px),
+    #4f86a0 repeating-radial-gradient(circle at 50% 50%, #fff0 0px, #fff0 63px, #4f86a0 0px, #6c9ab0 64px, #fff0 1px, #fff0 90px, #5ada6b00 0px, #6c9ab0 91px, #fff0 1px, #fff0 117px, #5ada6b00 0px, #6c9ab0 118px) -117.5px -117.5px;
+    background-size: 235px 235px;
+    padding: 35px 0 38px 0;
+}
+
+
+.main .logo {
+    float: left;
+    text-align: center;
+    width: 55%;
+    margin-top: 160px;
+    position: relative;
+    z-index: 1;
+}
+
+/*Create background white shadow on logo*/
+.main .logo:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    -webkit-box-shadow: 0 0 510px 248px rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: 0 0 510px 248px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 510px 248px rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+
+.main .logo img {
+    width: 100%;
+    max-width: 440px;
+}
+
+.information,
+.contact_form {
+    background-color: white;
+}
+
+.information {
+    padding: 30px 25px 0 25px;
+    margin-bottom: 25px;
+    max-height: 270px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 30px solid white;
+}
+
+/*Custom scroll style*/
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    max-height: 190px;
+    height: 100%;
+}
+
+.information .content {
+    max-height: 260px;
+}
+
+._mCS_1 .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #63859e;
+    width: 10px;
+    border-radius: 0;
+    height: 25px;
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #63859e;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #b1c2ce;
+    width: 1px;
+}
+
+#mCSB_1_scrollbar_vertical .mCSB_dragger {
+    max-height: 25px !important;
+}
+
+._mCS_1 .mCSB_dragger .mCSB_dragger_bar:hover {
+    background-color: #497392;
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 20px;
+}
+
+/******************************************************************/
+
+.information h2,
+.contact_form h2 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b1c2ce;
+    margin-bottom: 25px;
+}
+
+.information p {
+    line-height: 18px;
+}
+
+.side_info {
+    width: 42%;
+    max-width: 345px;
+    float: right;
+}
+
+.contact_form {
+    padding: 25px 20px 45px 25px;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 96%;
+    background-color: #63859e;
+    border: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+.contact_form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/*placeholder style*/
+.contact_form input::-webkit-input-placeholder,
+.contact_form textarea::-webkit-input-placeholder {
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+}
+
+.contact_form input::-moz-placeholder,
+.contact_form textarea::-moz-placeholder {
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.contact_form input:-moz-placeholder,
+.contact_form textarea:-moz-placeholder {
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.contact_form input:-ms-input-placeholder,
+.contact_form textarea:-ms-input-placeholder {
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+}
+
+/***********************************/
+.contact_form .wrapper input {
+    width: 100px;
+    flex-shrink: 2;
+}
+
+.contact_form .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.contact_form .captcha {
+    max-width: 100px;
+    flex-shrink: 1;
+}
+
+.contact_form button {
+    max-width: 60px;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    background-color: #6d6e70;
+    border: none;
+    max-height: 25px;
+    flex-shrink: 1;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.splash1 footer {
+    padding: 23px 0;
+    background-color: white;
+    clear: both;
+}
+
+/*responsive style*/
+
+@media all and (max-width: 576px) {
+
+    .contacts .address {
+        margin-bottom: 15px;
+    }
+
+    .contacts .address:first-child {
+        padding-bottom: 15px;
+        border: none;
+        border-bottom: 1px solid #b0c1ce;
+    }
+
+    .social_icons {
+        float: none;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .information {
+        padding: 10px 10px;
+        margin-bottom: 15px;
+    }
+
+    .main .logo:after {
+        box-shadow: 0 0 250px 120px rgba(255, 255, 255, 0.7);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .main .logo {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .side_info {
+        width: 100%;
+        max-width: 420px;
+        float: none;
+        margin: auto;
+    }
+
+    .main .logo:after {
+        box-shadow: 0 0 350px 140px rgba(255, 255, 255, 0.7);
+    }
+}
