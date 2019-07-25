@@ -25,22 +25,7 @@
 }
 
 body {
-    /*background-color: #eefafa;*/
     background-image: linear-gradient(to right top, #fd86ca, #f187d5, #e288e0, #d18be9, #bd8ef1, #9c9dfd, #78a9ff, #55b3ff, #11c7ff, #00d8ff, #00e9fa, #48f7ec);
-    animation: body-gradient 6s alternate ease-in-out infinite;
-    background-size: 400% 400%;
-}
-
-@keyframes body-gradient {
-    0% {
-        background-position: 0 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0 50%
-    }
 }
 
 .container-fluid {
@@ -141,7 +126,6 @@ a:focus {
 main {
     width: 75%;
     margin: 40px auto 0 auto;
-    overflow: hidden;
     padding-bottom: 10px;
 }
 
@@ -232,6 +216,7 @@ main .row {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 10px;
+    z-index: 3;
 }
 
 .work-description {
@@ -381,7 +366,7 @@ main h1 a:hover {
 }
 
 .work-container {
-    margin: -140px 0 40px 0;
+    margin: 0 0 40px 0;
 }
 
 .work-container.animate {
@@ -392,25 +377,30 @@ main h1 a:hover {
     transform: translate(0, -80px);
 }
 
-.welcome {
+.welcome, h2 {
     padding: 25px;
     font-family: baroque-script ,Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 50px;
-    transform: translate(0, -85px) scale(0.2);
     margin: 0;
 }
 
-.welcome.animate {
-    animation: start-welcome .7s ease-in-out 1s forwards;
+h2 {
+    padding: 25px;
+    font-family: arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+h2 a {
+    padding: 25px;
+    display: inline-block;
 }
 
 a.github-link {
     color: blueviolet;
     display: block;
     float: right;
-    transition: color .4s, transform .4s;
     margin: 10px 10px 0 0;
-    animation: to-git infinite alternate 1.5s forwards;
     text-shadow: 0 0 8px red;
 }
 
@@ -418,49 +408,5 @@ a.github-link {
     cursor: pointer;
     color: red;
     transform: scale(1.1);
-    animation: none;
-}
-.fly-in {
-    transform: translate(0, -180px);
-}
-
-.fly-in.animate {
-    animation: start-fly-in 1s ease-in-out 2s forwards;
-}
-
-.fly-in span.animate {
-    animation: start-scale 1s ease-in-out 3s forwards;
-}
-
-@keyframes to-git {
-    to {
-        transform: scale(1.1);
-        transition: all .4s;
-        color: #00c59e;
-    }
-}
-
-@keyframes star-twork {
-    to {
-        margin: 0 0 40px 0;
-    }
-}
-
-@keyframes start-welcome {
-    to {
-        transform: translate(0, 0) scale(1);
-    }
-}
-
-@keyframes start-fly-in {
-    to {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes start-scale {
-    to {
-        font-size: 50px;
-    }
 }
 
