@@ -1,0 +1,130 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px; }
+
+.lines:after {
+  content: '';
+  height: 1px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #a2a2a2;
+  margin-left: 15px; }
+
+.lines:before {
+  content: '';
+  height: 1px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #a2a2a2;
+  margin-right: 15px; }
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+  padding: 10px 15px; }
+  .container h1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Indie Flower', cursive;
+    margin: 30px 0 70px 0;
+    font-size: 5em; }
+  .container .portfolio-works {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .container .portfolio-works .work-container {
+      -webkit-perspective: 1000px;
+              perspective: 1000px;
+      height: 350px;
+      width: 28%;
+      margin-bottom: 50px;
+      cursor: pointer;
+      background: center top;
+      background-size: cover;
+      border: .5px solid black;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-box-shadow: 0 0 15px 1px black;
+              box-shadow: 0 0 15px 1px black;
+      -webkit-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out; }
+      @media screen and (max-width: 1280px) {
+        .container .portfolio-works .work-container {
+          width: 40%; } }
+      @media screen and (max-width: 1000px) {
+        .container .portfolio-works .work-container {
+          width: 45%; } }
+      @media screen and (max-width: 768px) {
+        .container .portfolio-works .work-container {
+          width: 100%; } }
+      @media screen and (max-width: 480px) {
+        .container .portfolio-works .work-container {
+          font-size: 9px; } }
+      .container .portfolio-works .work-container:hover {
+        background: center bottom;
+        background-size: cover; }
+      .container .portfolio-works .work-container:hover .hover-effect {
+        -webkit-transform: rotateX(0deg) scale(1);
+                transform: rotateX(0deg) scale(1);
+        opacity: 1; }
+      .container .portfolio-works .work-container .hover-effect {
+        cursor: auto;
+        -webkit-transition: all .7s ease-in-out;
+        -o-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+        -webkit-transform: rotateX(250deg) scale(0.2);
+                transform: rotateX(250deg) scale(0.2);
+        opacity: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+        .container .portfolio-works .work-container .hover-effect h2 {
+          font-family: Roboto, sans-serif;
+          color: white;
+          font-size: 2em;
+          font-weight: 500;
+          margin: 0 0 10px 0; }
+        .container .portfolio-works .work-container .hover-effect .description {
+          color: white;
+          font-size: 1.4em;
+          padding: 5px;
+          text-align: justify; }
+        .container .portfolio-works .work-container .hover-effect .btn-see {
+          display: block;
+          padding: 10px;
+          background-color: white;
+          color: black;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.3em;
+          margin: 0 auto;
+          max-width: 100px;
+          text-align: center; }

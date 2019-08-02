@@ -1,0 +1,127 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin min-screen($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
+body {
+  //font-family: 'Carter One', cursive, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+
+.lines {
+  &:after {
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+    background-color: #a2a2a2;
+    margin-left: 15px;
+  }
+  &:before {
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+    background-color: #a2a2a2;
+    margin-right: 15px;
+  }
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+  padding: 10px 15px;
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    margin: 30px 0 70px 0;
+    font-size: 5em;
+  }
+
+  .portfolio-works {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .work-container {
+      perspective: 1000px;
+      height: 350px;
+      width: 28%;
+      margin-bottom: 50px;
+
+      @include max-screen(1280px) {
+        width: 40%;
+      }
+
+      @include max-screen(1000px) {
+        width: 45%;
+      }
+
+      @include max-screen(768px) {
+        width: 100%;
+      }
+      @include max-screen(480px) {
+        font-size: 9px;
+      }
+      cursor: pointer;
+      background: center top;
+      background-size: cover;
+      border: .5px solid black;
+      box-sizing: border-box;
+      box-shadow: 0 0 15px 1px black;
+      transition: all 1s ease-in-out;
+      &:hover {
+        background: center bottom;
+        background-size: cover;
+      }
+      &:hover .hover-effect {
+        transform: rotateX(0deg) scale(1);
+        opacity: 1;
+      }
+      .hover-effect {
+        cursor: auto;
+        transition: all .7s ease-in-out;
+        transform: rotateX(250deg) scale(.2);
+        opacity: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        box-sizing: border-box;
+        h2 {
+          font-family: Roboto, sans-serif;
+          color: white;
+          font-size: 2em;
+          font-weight: 500;
+          margin: 0 0 10px 0;
+        }
+        .description {
+          color: white;
+          font-size: 1.4em;
+          padding: 5px;
+          text-align: justify;
+        }
+        .btn-see {
+          display: block;
+          padding: 10px;
+          background-color: white;
+          color: black;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.3em;
+          margin: 0 auto;
+          max-width: 100px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
