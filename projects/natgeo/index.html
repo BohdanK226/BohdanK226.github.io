@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+	<!-- <noscript><meta http-equiv="refresh" content="0; url=noscript.html"></noscript> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/browser-reject.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/jquery.reject.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="old-browser">
+        <h1>Your browser is too old for viewing our site :(</h1>
+        <p>If you want to see content on this page, please, upgrade your browser, or choice another:</p>
+        <ul>
+            <li class="browser-chrome"><a href="https://www.google.com/chrome/browser/desktop/index.html"><img src="images/browser-reject/browser_chrome.gif" alt="Chrome"><h2>Download Chrome</h2></a></li>
+            <li class="browser-msie"><a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie"><img src="images/browser-reject/browser_msie.gif" alt="IE"><h2>Download Explorer</h2></a></li>
+            <li class="browser-opera"><a href="http://www.opera.com/ru/computer"><img src="images/browser-reject/browser_opera.gif" alt="Opera"><h2>Download Opera</h2></a></li>
+            <li class="browser-safari"><a href="http://www.apple.com/safari/"><img src="images/browser-reject/browser_safari.gif" alt="Safari"><h2>Download Safari</h2></a></li>
+            <li class="browser-firefox"><a href="https://www.mozilla.org/ru/firefox/new/"><img src="images/browser-reject/browser_firefox.gif" alt="Firefox"><h2>Download Firefox</h2></a></li>
+        </ul>
+    </div>
+    <div class="main-container clearfix">
+        <div class="header clearfix">
+            <div class="header-top clearfix">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="login-buttons">
+                    <div class="sign-up">
+                        <a href="#fake-link"><img src="images/sign-up.png" alt="Sign Up"></a>
+                        <a href="#fake-link" class="login-label">Sign Up</a>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="login">
+                        <a href="#fake-link"><img src="images/login.png" alt="Sign Up"></a>
+                        <a href="#fake-link" class="login-label">Login</a>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <form action="#" method="get">
+                        <div class="search-wrapper clearfix">
+                            <img src="images/search-icon.png" alt="search icon" class="search-icon">
+                            <input class="search-field" type="text" name="seacrh" id="search">
+                            <label class="label-search" for="search">Search</label>
+                        </div>
+                        <select name="categories" id="categories" class="categories">
+                            <option></option>
+                            <option value="photography">Photography</option>
+                            <option value="tips">Tips</option>
+                            <option value="videos">Videos</option>
+                            <option value="travel">Travel</option>
+                            <option value="kids">Kids</option>
+                        </select>
+                        <input class="search-button" type="image" src="images/search-button.png" alt="Search Button">
+                    </form>
+                </div>
+            </div>
+            <div class="main-menu-section">
+                <div class="menu-line"></div>
+                <ul>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/home.png" class="icon hide-icon" alt="Home">
+                                <img src="images/main-menu-icons/home-active.png" class="icon-active" alt="Home">
+                            </a>
+                        </div>
+                        <a href="#" class="main-links main-links-active">HOME</a>
+                    </li>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/photography.png" class="icon" alt="Photography">
+                                <img src="images/main-menu-icons/photography-active.png" class="icon-active hide-icon" alt="Photography">
+                            </a>
+                        </div>
+                        <a href="#" class="main-links">Photography</a>
+                    </li>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/video.png" class="icon" alt="Video">
+                                <img src="images/main-menu-icons/video-active.png" class="icon-active hide-icon" alt="Video">
+                            </a>
+                        </div>
+                        <a href="#" class="main-links">Video</a>
+                    </li>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/environment.png" class="icon" alt="Envoronment">
+                                <img src="images/main-menu-icons/environment-active.png" class="icon-active hide-icon" alt="Envoronment">
+                            </a>
+                        </div>
+                        <a href="#" class="main-links">Environment</a>
+                    </li>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/travel.png" class="icon" alt="Travel">
+                                <img src="images/main-menu-icons/travel-active.png" class="icon-active hide-icon" alt="Travel">
+                            </a>
+                        </div>
+                        <a href="#" class="main-links">Travel</a>
+                    </li>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/adventure.png" class="icon" alt="Adventure">
+                                <img src="images/main-menu-icons/adventure-active.png" class="icon-active hide-icon" alt="Adventure">
+                            </a>
+                        </div>
+                            <a href="#" class="main-links">Adventure</a>
+                    </li>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/tv.png" class="icon" alt="TV">
+                                <img src="images/main-menu-icons/tv-active.png" class="icon-active hide-icon" alt="TV">
+                            </a>
+                        </div>
+                            <a href="#" class="main-links">Television</a>
+                    </li>
+                    <li>
+                        <div class="main-icon-wrapper">
+                            <a class="main-icon" href="#">
+                                <img src="images/main-menu-icons/kids.png" class="icon" alt="Kids">
+                                <img src="images/main-menu-icons/kids-active.png" class="icon-active hide-icon" alt="Kids">
+                            </a>
+                        </div>
+                        <a href="#" class="main-links">Kids</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main clearfix">
+            <div class="left-side clearfix">
+               <div class="top-news">
+                   <div class="sub-menu">
+                       <ul>
+                           <li>
+                               <a href="#fake-link" class="sub-menu-active">
+                                   <div>
+                                       <img src="images/submenu-icons/news.png" class="sub-icon hide-icon" alt="news">
+                                       <img src="images/submenu-icons/news-h.png" alt="news" class="sub-icon-active">
+                                   </div>
+                                   <span>Daily News</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/magazine.png" class="sub-icon" alt="Magazine">
+                                       <img src="images/submenu-icons/magazine-h.png" alt="Magazine" class="sub-icon-active hide-icon">
+                                   </div>
+                                   <span>Magazine</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/maps.png" class="sub-icon" alt="Maps">
+                                       <img src="images/submenu-icons/maps-h.png" class="sub-icon-active hide-icon" alt="Maps">
+                                   </div>
+                                   <span>Maps</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/science.png" class="sub-icon" alt="Sciense">
+                                       <img src="images/submenu-icons/science-h.png" class="sub-icon-active hide-icon" alt="Sciense">
+                                   </div>
+                                   <span>Science</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/education.png" class="sub-icon" alt="Education">
+                                       <img src="images/submenu-icons/education-h.png" class="sub-icon-active hide-icon" alt="Education">
+                                   </div>
+                                   <span>Education</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/games.png" alt="Games" class="sub-icon">
+                                       <img src="images/submenu-icons/games-h.png" alt="Games" class="sub-icon-active hide-icon">
+                                   </div>
+                                   <span>Games</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/events.png" alt="events" class="sub-icon">
+                                       <img src="images/submenu-icons/events-h.png" alt="events" class="sub-icon-active hide-icon">
+                                   </div>
+                                   <span>Events</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/blogs.png" alt="Blogs" class="sub-icon">
+                                       <img src="images/submenu-icons/blogs-h.png" alt="Blogs" class="sub-icon-active hide-icon">
+                                   </div>
+                                   <span>Blogs</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/explorers.png" alt="explorers" class="sub-icon">
+                                       <img src="images/submenu-icons/explorers-h.png" alt="explorers" class="sub-icon-active hide-icon">
+                                   </div>
+                                   <span>Explorers</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#fake-link">
+                                   <div>
+                                       <img src="images/submenu-icons/trips.png" alt="trips" class="sub-icon">
+                                       <img src="images/submenu-icons/trips-h.png" alt="trips" class="sub-icon-active hide-icon">
+                                   </div>
+                                   <span>Trips</span>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="filter-carousel">
+                       <div class="filter-menu">
+                           <ul>
+                               <li><a href="#fake-link" class="filter-active">HOME</a></li>
+                               <li><a href="#fake-link">Animals</a></li>
+                               <li><a href="#fake-link">Ancient</a></li>
+                               <li><a href="#fake-link">Energy</a></li>
+                               <li><a href="#fake-link">Environment</a></li>
+                               <li><a href="#fake-link">Travel</a></li>
+                           </ul>
+                       </div>
+                       <div id="main-slider" class="carousel slide" data-interval="3200" data-ride="carousel">
+                           <ol class="carousel-indicators">
+                               <li data-target="#main-slider" data-slide-to="0" class="active" title="Go to slide">1</li>
+                               <li data-target="#main-slider" data-slide-to="1" title="Go to slide">2</li>
+                               <li data-target="#main-slider" data-slide-to="2" title="Go to slide">3</li>
+                           </ol>
+                           <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slider-content">
+                                        <div class="slider-image">
+                                            <img src="images/slider-images/pic-1.jpg" alt="image">
+                                        </div>
+                                        <div class="description clearfix">
+                                            <div class="text">
+                                                <h2>Lion Cubs Playing</h2>
+                                                <p>African lion cubs play in the grass in the Okavango Delta.</p>
+                                            </div>
+                                            <div class="pause">
+                                                <a href="#" class="pause-icon"><img src="images/pause.png" alt="Pause"></a>
+                                                <a href="#" class="play-icon hide"><img src="images/play.png" alt="Play"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                   <div class="slider-content">
+                                       <div class="slider-image">
+                                           <img src="images/slider-images/pic-2.jpg" alt="image">
+                                       </div>
+                                       <div class="description clearfix">
+                                           <div class="text">
+                                               <h2>Two lions</h2>
+                                               <p>African lion cubs play in the grass in the Okavango Delta.</p>
+                                           </div>
+                                           <div class="pause">
+                                               <a href="#" class="pause-icon"><img src="images/pause.png" alt="Pause"></a>
+                                               <a href="#" class="play-icon hide"><img src="images/play.png" alt="Play"></a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="item">
+                                   <div class="slider-content">
+                                       <div class="slider-image">
+                                           <img src="images/slider-images/pic-3.jpg" alt="image">
+                                       </div>
+                                       <div class="description clearfix">
+                                           <div class="text">
+                                               <h2>Lions sleep</h2>
+                                               <p>African lion cubs play in the grass in the Okavango Delta.</p>
+                                           </div>
+                                           <div class="pause">
+                                               <a href="#" class="pause-icon"><img src="images/pause.png" alt="Pause"></a>
+                                               <a href="#" class="play-icon hide"><img src="images/play.png" alt="Play"></a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="latest-news">
+                            <div class="wrapper clearfix">
+                                <div class="news">
+                                    <img src="images/latest-news.png" class="news-icon" alt="news icon">
+                                    <h2>Latest News</h2>
+                                </div>
+                                <div class="most-recent">
+                                    <select name="categories" id="recent" class="recent-select">
+                                        <option></option>
+                                        <option value="recent1">Recent1</option>
+                                        <option value="recent2">Recent2</option>
+                                        <option value="recent3">Recent3</option>
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="clearfix grid-list-wrapper">
+                               <div class="grid-icon">
+                                   <a href="#fake-link"><img src="images/grid.png" alt="Grid" title="View in grid mode"></a>
+                               </div>
+                               <div class="list-icon">
+                                   <a href="#fake-link"><img src="images/list.png" alt="List" title="View in list mode"></a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <div class="right-side clearfix">
+                <div class="most-popular-title">
+                    <img src="images/most-pop-icon.png" alt="icon">
+                    <h2>Most Popular News</h2>
+                </div>
+                <div class="pop-news-article">
+                    <a href="#link-to-news" title="Click to view news"></a>
+                    <div class="article-image">
+                        <img src="images/most-popular-pic/pic-1.jpg" alt="pic1">
+                    </div>
+                    <div class="article-description clearfix">
+                        <div class="article-title">
+                            <h2>The Bite That</h2>
+                            <h3>6 days ago</h3>
+                        </div>
+                        <div class="rating">
+                            <ul>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                            </ul>
+                            <div class="votes">
+                                <h4>71,482 votes</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop-news-article">
+                    <a href="#link-to-news" title="Click to view news"></a>
+                    <div class="article-image">
+                        <img src="images/most-popular-pic/pic-2.jpg" alt="pic1">
+                    </div>
+                    <div class="article-description clearfix">
+                        <div class="article-title">
+                            <h2>Stranger Than Nature</h2>
+                            <h3>8 days ago</h3>
+                        </div>
+                        <div class="rating">
+                            <ul>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                                <li><img src="images/star.png" alt="star"></li>
+                            </ul>
+                            <div class="votes">
+                                <h4>64,159 votes</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-popular-title videos">
+                    <img src="images/most-pop-videos.png" alt="icon">
+                    <h2>Most Popular Videos</h2>
+                </div>
+                <div class="most-popular-videos">
+                    <a href="#link-to-news" title="Click to view news"></a>
+                    <div class="article-image">
+                        <img src="images/most-popular-videos/pic-1.jpg" alt="pic1">
+                    </div>
+                    <div class="article-description clearfix">
+                        <div class="article-title">
+                            <h2>Most Rare Birds Ever</h2>
+                            <h3>211,482 views</h3>
+                        </div>
+                        <div class="play-video">
+                            <a href="#fake-link" title="Play"><img src="images/play-video.png" alt="play"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-popular-videos">
+                    <a href="#link-to-news" title="Click to view news"></a>
+                    <div class="article-image">
+                        <img src="images/most-popular-videos/pic-2.jpg" alt="pic1">
+                    </div>
+                    <div class="article-description clearfix">
+                        <div class="article-title">
+                            <h2>Mandarin Dragonet</h2>
+                            <h3>192,092 views</h3>
+                        </div>
+                        <div class="play-video">
+                            <a href="#fake-link" title="Play"><img src="images/play-video.png" alt="play"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-popular-title videos">
+                    <div class="title">
+                        <img src="images/events-icon.png" alt="icon">
+                        <h2>Upcoming Events</h2>
+                    </div>
+                    <div class="arrows clearfix">
+                        <div class="arrow-next">
+                            <a href="#next"><img src="images/next-arrow.png" alt="Next"></a>
+                        </div>
+                        <div class="arrow-prev">
+                            <a href="#prev"><img src="images/prev-arrow.png" alt="Back"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="upcoming-events">
+                    <div class="title">
+                        <h2>NatGeo Live Student Matinees</h2>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/upcoming-events/pic-1.png" alt="Picture">
+                        <div class="evens-label">
+                            <img src="images/clock.png" alt="watches">
+                            <h3>April 17, 2013</h3>
+                        </div>
+                    </div>
+                    <p>Live Student Matinees offer students in USA and Canada entertaining and visually spectacular
+                        presentations by leading explorers</p>
+                </div>
+                <div class="left-side-buttons clearfix">
+                    <a href="#fake-link">
+                        <span><img src="images/shopping-icon.png" alt="icon"></span>
+                        shopping
+                    </a>
+                    <a class="subscription-btn" href="#fake-link">
+                        <span><img src="images/subscription-icon.png" alt="icon"></span>
+                        subscribsions
+                    </a>
+                </div>
+            </div>
+            <div class="main-news">
+                <div class="article-header">
+                    <a href="#fake-link" class="view-news" title="Click to view"></a>
+                    <div class="wrapper">
+                        <div><img src="images/news/pic-1.jpg" alt="Picture"></div>
+                        <div class="title-wrapper">
+                            <div class="title">
+                                <h2>African Lion Cub</h2>
+                                <h3>3 hours ago</h3>
+                            </div>
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/empty-star.png" alt="star"></li>
+                                </ul>
+                                <div class="votes">
+                                    <h4>1,291 votes</h4>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>An African lion cub rests in the tall grasses of Botswana’s Okavango Delta. Once ranging across
+                        the African continent and into Syria, Israel, Iraq, Pakistan, Iran, and even northwest India, lions have
+                        declined to as few as 20,000 animals from about 450,000 just 50 years ago.</p>
+                </div>
+            </div>
+            <div class="main-news">
+                <div class="article-header">
+                    <a href="#fake-link" class="view-news" title="Click to view"></a>
+                    <div class="wrapper">
+                        <div><img src="images/news/pic-2.jpg" alt="Picture"></div>
+                        <div class="title-wrapper">
+                            <div class="title">
+                                <h2>African Lion Cub</h2>
+                                <h3>5 hours ago</h3>
+                            </div>
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/empty-star.png" alt="star"></li>
+                                    <li><img src="images/empty-star.png" alt="star"></li>
+                                </ul>
+                                <div class="votes">
+                                    <h4>972 votes</h4>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>This young mountain gorilla, named Kwibesha, is a member of the Kabrizi family of gorillas in Virunga National Park. Wildlife rangers in the park have had to suspend their monitoring of the gorillas because rebel militias and the Congolese army occupy much of their habitat.</p>
+                </div>
+            </div>
+            <div class="main-news">
+                <div class="article-header">
+                    <a href="#fake-link" class="view-news" title="Click to view"></a>
+                    <div class="wrapper">
+                        <div><img src="images/news/pic-3.jpg" alt="Picture"></div>
+                        <div class="title-wrapper">
+                            <div class="title">
+                                <h2>King Penguins</h2>
+                                <h3>8 hours ago</h3>
+                            </div>
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/empty-star.png" alt="star"></li>
+                                    <li><img src="images/empty-star.png" alt="star"></li>
+                                    <li><img src="images/empty-star.png" alt="star"></li>
+                                </ul>
+                                <div class="votes">
+                                    <h4>683 votes</h4>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>King penguins live on the more temperate islands north of Antarctica. Although their habitat is warmer than that of emperor penguins, king penguins have four layers of feathers and huddle together for warmth.</p>
+                </div>
+            </div>
+            <div class="main-news">
+                <div class="article-header">
+                    <a href="#fake-link" class="view-news" title="Click to view"></a>
+                    <div class="wrapper">
+                        <div><img src="images/news/pic-4.jpg" alt="Picture"></div>
+                        <div class="title-wrapper">
+                            <div class="title">
+                                <h2>Great White Shark</h2>
+                                <h3>1 day ago</h3>
+                            </div>
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                    <li><img src="images/star.png" alt="star"></li>
+                                </ul>
+                                <div class="votes">
+                                    <h4>2,827 votes</h4>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>The legendary great white shark is far more fearsome in our imaginations
+                        than in reality. As scientific research on these elusive predators increases,
+                        their image as mindless killing machines is beginning to fade.</p>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="magazines clearfix">
+                <div class="wrapper">
+                    <img src="images/magazine.png" alt="magazine">
+                    <h2>National Geographic Magazines</h2>
+                </div>
+                <div class="arrows clearfix">
+                    <div class="arrow-next">
+                        <a href="#next"><img src="images/next-arrow.png" alt="Next"></a>
+                    </div>
+                    <div class="arrow-prev">
+                        <a href="#prev"><img src="images/prev-arrow.png" alt="Back"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="books">
+            <div class="item-container">
+                <div class="item-header">
+                    <div class="image-wrapper">
+                        <img src="images/books/book-1.jpg" alt="Book">
+                    </div>
+                    <h2>National Geographic Magazine</h2>
+                </div>
+                <div class="item-footer clearfix">
+                    <div class="rating">
+                        <ul>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                        </ul>
+                        <div class="votes">
+                            <h4>2,827 votes</h4>
+                        </div>
+                    </div>
+                    <a class="subscription-btn" href="#fake-link">
+                        <span><img src="images/plus-icon.png" alt="icon"></span>
+                        subscribsions
+                    </a>
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item-header">
+                    <div class="image-wrapper">
+                        <img src="images/books/book-2.jpg" alt="Book">
+                    </div>
+                    <h2>National Geographic Kids Magazine</h2>
+                </div>
+                <div class="item-footer clearfix">
+                    <div class="rating">
+                        <ul>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/empty-star.png" alt="star"></li>
+                        </ul>
+                        <div class="votes">
+                            <h4>5,841 votes</h4>
+                        </div>
+                    </div>
+                    <a class="subscription-btn" href="#fake-link">
+                        <span><img src="images/plus-icon.png" alt="icon"></span>
+                        subscribsions
+                    </a>
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item-header">
+                    <div class="image-wrapper">
+                        <img src="images/books/book-3.jpg" alt="Book">
+                    </div>
+                    <h2>NG Young Explorer Magazine</h2>
+                </div>
+                <div class="item-footer clearfix">
+                    <div class="rating">
+                        <ul>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                        </ul>
+                        <div class="votes">
+                            <h4>6,121 votes</h4>
+                        </div>
+                    </div>
+                    <a class="subscription-btn" href="#fake-link">
+                        <span><img src="images/plus-icon.png" alt="icon"></span>
+                        subscribsions
+                    </a>
+                </div>
+            </div>
+            <div class="item-container no-margin">
+                <div class="item-header">
+                    <div class="image-wrapper">
+                        <img src="images/books/book-4.jpg" alt="Book">
+                    </div>
+                    <h2>national Geographic Little Kids Magazine</h2>
+                </div>
+                <div class="item-footer clearfix">
+                    <div class="rating">
+                        <ul>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                            <li><img src="images/star.png" alt="star"></li>
+                        </ul>
+                        <div class="votes">
+                            <h4>9,107 votes</h4>
+                        </div>
+                    </div>
+                    <a class="subscription-btn" href="#fake-link">
+                        <span><img src="images/plus-icon.png" alt="icon"></span>
+                        subscribsions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="footer-left">
+                <form action="#" name="subscribe" method="post">
+                    <div class="email-wrapper">
+                        <input type="text" id="email" class="email-field">
+                        <label for="email" class="email-label">Type your email</label>
+                        <input type="submit" value="subscribe" class="footer-suscribe-btn">
+                    </div>
+                </form>
+                <ul class="social-icons">
+                    <li><a href="#fake-link"><img src="images/facebook.png" alt="social icon"></a></li>
+                    <li><a href="#fake-link"><img src="images/twitter.png" alt="social icon"></a></li>
+                    <li><a href="#fake-link"><img src="images/youtube.png" alt="social icon"></a></li>
+                </ul>
+            </div>
+            <div class="footer-right clearfix">
+                <ul class="footer-menu">
+                    <li><a href="#fake-link">Customer Service</a></li>
+                    <li><a href="#fake-link">advertise With Us</a></li>
+                    <li><a href="#fake-link">Terms of Service </a></li>
+                    <li class="no-after"><a href="#fake-link">Privacy Policy</a></li>
+                </ul>
+                <div class="copyright">
+                    &#169; 1996-2013 National Geographic Society. All rights reserved
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

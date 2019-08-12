@@ -1,0 +1,290 @@
+
+@media (max-width: 600px) {
+    .mfp-close {
+        right: 28px !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    /*.tile {*/
+        /*height: 450px;*/
+    /*}*/
+    .caption {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .caption span {
+        font-size: 53px;
+    }
+
+    .work-description {
+        margin-left: 20%;
+        font-size: 28px;
+    }
+
+    .content-right {
+        font-size: 16px;
+    }
+
+    .testimonials {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tile-3::before, .tile-11::before {
+        right: 100%;
+        left: -30px;
+        border-right: 15px solid #2f84e5;
+        border-left: 15px solid transparent;
+    }
+
+    .tile-3::before {
+        border-right: 15px solid #df4343;
+    }
+
+    .tile-6::before {
+        left: 100%;
+        right: -30px;
+        border-left: 15px solid #64b341;
+        border-right: 15px solid transparent;
+    }
+}
+
+@media (min-width: 992px) {
+    .tile-10::before, .tile-11::before {
+        left: 100%;
+        right: -30px;
+        border-left: 15px solid #ffa200;
+        border-right: 15px solid transparent;
+    }
+
+    .tile-11::before {
+        border-left: 15px solid #2f84e5;
+    }
+
+    .tile-6::before {
+        right: 100%;
+        left: -30px;
+        border-right: 15px solid #64b341;
+        border-left: 15px solid transparent;
+    }
+
+    .menu-footer .menu-item::after {
+        margin: 0 6px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .slide-info {
+        top: 30%;
+        font-size: 20px;
+    }
+
+    .logo {
+        margin-left: 6%;
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .caption span {
+        font-size: 40px;
+    }
+
+    .carousel-wrapper {
+        width: 75%;
+    }
+
+    .arrow-left {
+        left: 0;
+        margin-left: 2%;
+    }
+
+    .arrow-right {
+        right: 0;
+        margin-right: 2%;
+    }
+
+    [class^="arrow-"] {
+        top: 50%;
+        margin-top: -50px;
+    }
+
+    .about-us {
+        width: 90%;
+    }
+
+    .testimonials {
+        width: 90%;
+    }
+
+    .testimonials .short-line {
+        margin: 25px auto 30px;
+    }
+    .testimonials h3 {
+        margin-top: 30px;
+    }
+    .subscribe-wrapper {
+        width: 60%;
+    }
+
+    .menu-footer .menu-item::after {
+        margin: 0 4px;
+    }
+
+    .main-menu-portfolio .logo {
+        margin-left: 4%;
+    }
+
+    .main-menu-portfolio .main-menu {
+        top: 7px;
+        margin-right: 5%;
+    }
+    .portfolio-our-works {
+        width: 97%;
+    }
+
+    .contact-us {
+        width: 90%;
+    }
+
+    .contacts-data .social-icons {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-info {
+        top: 50%;
+        margin-top: -80px;
+        font-size: 15px;
+    }
+
+    .logo {
+        margin-left: 1%;
+    }
+
+    .logo-nav {
+        top: 1%;
+    }
+
+    .logo a {
+        font-size: 12px;
+    }
+
+    .slide-info .short-line {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 17px;
+        margin: 0 0 5px 0;
+    }
+
+    .caption span {
+        font-size: 22px;
+    }
+
+    .carousel-wrapper {
+        width: 80%;
+    }
+
+    .arrow-left {
+        left: 0;
+        margin-left: 1%;
+    }
+
+    .arrow-right {
+        right: 0;
+        margin-right: 1%;
+    }
+
+    [class^="arrow-"] {
+        top: 95%;
+        margin-top: -50px;
+    }
+
+    .work-description {
+        padding: 0;
+    }
+
+    .feedback {
+        margin-bottom: 35px;
+    }
+    .subscribe-wrapper {
+        width: 92%;
+    }
+
+    .contacts {
+        text-align: center;
+    }
+    .menu-footer .menu-item{
+        display: block;
+
+    }
+
+    .menu-footer {
+        padding-bottom: 20px;
+    }
+    .menu-footer .menu-item::after {
+        content: '';
+    }
+
+    .menu-footer .menu-container {
+        padding: 0;
+    }
+
+    .contact-us {
+        width: 94%;
+    }
+
+    .contacts-data {
+        text-align: center;
+    }
+
+    .contacts-data .social-icons {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-details input[type="submit"] {
+        margin: 20px auto 20px auto;
+        display: block;
+    }
+
+    .contact-us h1 {
+        margin-top: 30px;
+    }
+
+    .contact-us .short-line {
+        margin-bottom: 0;
+    }
+
+    .tile {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tile {
+        font-size: 22px;
+    }
+    .tile {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 350px) {
+    .tile {
+        height: 250px;
+        min-height: 0;
+    }
+}
